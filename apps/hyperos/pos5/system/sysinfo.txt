@@ -1,0 +1,5 @@
+prismOS 5 build 1050
+Kernel Version: 5
+Build Revision Number: 6
+Version status: compiled in 2022-Q1 
+Full build string: 1050.pos5.5.6.22Q1

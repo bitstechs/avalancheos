@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <title>prismOS | Lock</title>      
+     	
+   </head>
+
+
+   <style>
+  
+
+  
+#bg {
+   position: fixed;
+   top: 0;
+   left: 0;
+
+   /* Preserve aspet ratio */
+   min - width: 100 % ;
+   min - height: 100 % ;
+}
+
+
+h1 {
+  color: white;
+              font-family: helvetica;
+
+}
+h2 {
+  color: white;
+              font-family: helvetica;
+font-size: 80px;
+}
+
+p {
+  color: white;
+              font-family: helvetica;
+
+}
+    
+   .center {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+#left { 
+                position:absolute;                  
+                bottom:0;                          
+                left:0;
+ 
+            }
+     .left { 
+                position:absolute;                  
+                bottom:0;                          
+                left:0;
+ 
+            }
+     #top { 
+                position:absolute;                  
+                bottom:0;                          
+                top:0;
+ 
+            }
+    #right { 
+                position:absolute;                  
+                bottom:0;                          
+                right:0;                          
+            }
+#time {
+text-align: left;
+width: 99%;
+}
+
+  </style>
+  <img src="system/images/bg.jpg" id="bg" alt="">
+
+<h1>
+
+  </h1>
+    
+  <h1>
+    
+  <div id="right">Welcome to prismOS. <br>Press enter to login.</div>
+
+
+
+  </h1>
+ 
+
+  
+ 
+
+     
+     <script>
+    document.body.addEventListener("keydown", function (event) {
+    if (event.keyCode === 13) {
+        window.location.replace("desktop.html");
+    }
+});
+       </script>
+   
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('time').innerHTML =
+    h + ":" + m;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+
+<body onload="startTime()">
+
+ <h2><div id="time" class="left"></div><h2>
+  
+  
+
+</html>

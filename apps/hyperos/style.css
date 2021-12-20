@@ -1,0 +1,55 @@
+body {
+background-color: black;
+}
+
+h1 {
+  color: white;
+              font-family: helvetica;
+
+}
+a {
+  color: white;
+              font-family: helvetica;
+
+}
+h2 {
+  color: white;
+              font-family: helvetica;
+font-size: 80px;
+}
+
+p {
+  color: white;
+              font-family: helvetica;
+
+}
+    
+   .center {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+#left { 
+                position:absolute;                  
+                bottom:0;                          
+                left:0;
+ 
+            }
+     .left { 
+                position:absolute;                  
+                bottom:0;                          
+                left:0;
+ 
+            }
+     #top { 
+                position:absolute;                  
+                bottom:0;                          
+                top:0;
+ 
+            }
+    #right { 
+                position:absolute;                  
+                bottom:0;                          
+                right:0;                          
+            }

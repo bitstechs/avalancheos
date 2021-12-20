@@ -1,0 +1,38 @@
+<style>
+#time { 
+                position:absolute;           
+                top:4;
+                color: white;
+                font-family: Helvetica;
+                text-align: center;
+                width: 97%;
+                font-size: 14px;
+  }
+ .left { 
+                position:absolute;                  
+                bottom:0;                          
+                left:0;
+ 
+            }
+</style>
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('time').innerHTML =
+    h + ":" + m;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+
+<body onload="startTime()">
+
+ <a><div id="time" class="left"></div></a>

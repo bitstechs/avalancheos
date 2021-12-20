@@ -1,0 +1,27 @@
+<html><head><link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<style>
+
+  
+  </style>
+		<script type="text/javascript">
+    function changePage(){
+  document.getElementById("Bronze").src = ""+document.getElementById("addressbar").value;
+}
+</script>
+<title>Inter Browser</title>
+</head><body><div id="interIcons">
+<a target="bronzeFrame" id="bronzeHome" href="bronze.html"><img src="imgs/home.png"></a>
+<a id="bronzeBack" href="javascript:history.back();"><img src="imgs/back.png"></a>
+<a id="bronzeForward" onclick="javascript.history.forward();"><img src="imgs/forward.png"></a>
+</div>
+<div id="bronzeTop">
+<div id="bronzeBar"><input autocomplete="off" type="text" id="addressbar">
+</div></div>
+<button type="button" id="goButton" onclick="changePage();">Go</button>
+			<embed src="inter.html" frameborder="0" id="Bronze" style="border: none;" class="bronzeFrame" name="bronzeFrame" scrolling="yes" marginheight="0px" marginwidth="0px" width="100%" height="92%" allowfullscreen="">
+			</body></html>

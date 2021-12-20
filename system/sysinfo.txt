@@ -1,0 +1,5 @@
+prismOS Avalanche build 1400
+Kernel Version: 5
+Build Revision Number: 222
+Version status: compiled in 2022-Q1 
+Full build string: 1400.posavalanche.5.222.22Q1
