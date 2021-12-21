@@ -234,6 +234,7 @@ color: white;
 #window4 .wincontent {	width: 238px; height: 195px;	}
 #window5 .wincontent {	width: 640px; height: 480px;	}
 #window6 .wincontent {	width: 830px; height: 635px;	}
+#window7 .wincontent {	width: 385px; height: 320px;	}
 
 @media screen and (max-width:960px){
 	#window0 {	left: 10px;	}
