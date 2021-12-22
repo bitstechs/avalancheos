@@ -56,8 +56,8 @@ input,select{vertical-align:middle}
 #appicons {
 	position: absolute;
 	z-index: 10;
-	top: 45px;
-	left: 20px;
+	top: 10px;
+	left: 5px;
 }
 #appicons a {
     display: inline-table;
