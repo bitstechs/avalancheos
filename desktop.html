@@ -15,12 +15,25 @@
 <body>
 
 
+	<div id="appsmenu" onclick="off()">
+		<div id="appicons">
+			<a class="openWindow" data-id="0"><img border="0" alt="" src="system/images/icons/paint-32x32.png" width="32" height="32"><br>Paint</a>
+			<a class="openWindow" data-id="1"><img border="0" alt="" src="system/images/icons/notepad-32x32.png" width="32" height="32"><br>Notepad</a>
+			<a class="openWindow" data-id="2"><img border="0" alt="" src="system/images/icons/minesweeper-32x32.png" width="32" height="32"><br>Minesweeper</a>
+			<a class="openWindow" data-id="3"><img border="0" alt="" src="system/images/icons/cal-32x32.png" width="32" height="32"><br>Calendar</a>
+			<a class="openWindow" data-id="4"><img border="0" alt="" src="system/images/icons/calc-32x32.png" width="32" height="32"><br>Calculator</a>
+			<a class="openWindow" data-id="5"><img border="0" alt="" src="system/images/icons/bronze-32x32.png" width="32" height="32"><br>Bronze Browser</a>
+			<a class="openWindow" data-id="6"><img border="0" alt="" src="system/images/icons/hyperos-32x32.png" width="32" height="32"><br>HyperOS</a>
+			<a class="openWindow" data-id="7"><img border="0" alt="" src="system/images/icons/about-32x32.png" width="32" height="32"><br>About</a>
+			<a href='lockscreen.html'><img src="system/images/icons/logoff-32x32.png" title="Signs off the user."></a>
+            <a href='index.html'><img src="system/images/icons/shutdown-32x32.png" title="Shut the computer down."></a> 
+	     </div>
+    </div>
+
 
 	<div id="desktop">
 
-                                  
-
-		<div class="window closed" data-title="Paint">
+        <div class="window closed" data-title="Paint">
 		<iframe width="100%" height="100%" src="apps/jspaint/index.html"></iframe>
 		</div>
 
@@ -43,9 +56,11 @@
          <div class="window closed" data-title="Bronze Browser">
 			<iframe width="100%" height="100%" src="apps/bronze/index.html"></iframe>
 		</div>
+
         <div class="window closed" data-title="HyperOS">
 			<iframe width="100%" height="100%" src="apps/hyperos/index.html"></iframe>
         </div>
+
 		<div class="window closed" data-title="About prismOS">
 			<iframe width="100%" height="100%" src="apps/about/index.html"></iframe>
         </div>
@@ -53,34 +68,35 @@
                           
 		
 		<div id="taskbar">
-                        
+			<button onclick="on()">Apps</button>           
 		</div>
 		
 		<div id="icons">
-      <a class="openWindow" data-id="0"><img border="0" alt="" src="system/images/icons/paint-32x32.png" width="32" height="32"><br>Paint</a>
-      <a class="openWindow" data-id="1"><img border="0" alt="" src="system/images/icons/notepad-32x32.png" width="32" height="32"><br>Notepad</a>
-      <a class="openWindow" data-id="2"><img border="0" alt="" src="system/images/icons/minesweeper-32x32.png" width="32" height="32"><br>Minesweeper</a>
-      <a class="openWindow" data-id="3"><img border="0" alt="" src="system/images/icons/cal-32x32.png" width="32" height="32"><br>Calendar</a>
-      <a class="openWindow" data-id="4"><img border="0" alt="" src="system/images/icons/calc-32x32.png" width="32" height="32"><br>Calculator</a>
-      <a class="openWindow" data-id="5"><img border="0" alt="" src="system/images/icons/bronze-32x32.png" width="32" height="32"><br>Bronze Browser</a>
-      <a class="openWindow" data-id="6"><img border="0" alt="" src="system/images/icons/hyperos-32x32.png" width="32" height="32"><br>HyperOS</a>
-	  <a class="openWindow" data-id="7"><img border="0" alt="" src="system/images/icons/about-32x32.png" width="32" height="32"><br>About</a>
-
-      <a href='lockscreen.html'><img src="system/images/icons/logoff-32x32.png" title="Signs off the user."></a>
-      <a href='index.html'><img src="system/images/icons/shutdown-32x32.png" title="Shut the computer down."></a> 
-
-
-                                                    
-			
-		</div>
+         <a class="openWindow" data-id="0"><img border="0" alt="" src="system/images/icons/paint-32x32.png" width="32" height="32"><br>Paint</a>
+         <a class="openWindow" data-id="1"><img border="0" alt="" src="system/images/icons/notepad-32x32.png" width="32" height="32"><br>Notepad</a>
+         <a class="openWindow" data-id="3"><img border="0" alt="" src="system/images/icons/cal-32x32.png" width="32" height="32"><br>Calendar</a>
+         <a class="openWindow" data-id="4"><img border="0" alt="" src="system/images/icons/calc-32x32.png" width="32" height="32"><br>Calculator</a>
+         <a class="openWindow" data-id="5"><img border="0" alt="" src="system/images/icons/bronze-32x32.png" width="32" height="32"><br>Bronze Browser</a>
+	    </div>
 		
 	</div>
 
-<div class="time">				
+    <script>
+		function on() {
+		  document.getElementById("appsmenu").style.display = "block";
+		}
+		
+		function off() {
+		  document.getElementById("appsmenu").style.display = "none";
+		}
+    </script>
+
+
+    <div class="time">				
       <h1>
-     <iframe width="100" height="32" src="apps/clock/index.html" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
-     </h1>
-</div>
+      <iframe width="100" height="32" src="apps/clock/index.html" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+      </h1>
+    </div>
 
 
 </body>
