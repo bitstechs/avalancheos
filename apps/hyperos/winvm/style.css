@@ -1,16 +1,16 @@
 body {
-  background-color: black;
+  background-color: white;
   background-repeat: no-repeat;
   background-size: 100%;
   font-family: Ubuntu, Helvetica, sans-serif;
 }
 a {
-  color: white;
+  color:black;
               font-family: helvetica;
 
 }
 div {
-  color: white;
+  color: black;
               font-family: helvetica;
 
 }

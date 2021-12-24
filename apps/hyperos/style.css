@@ -1,25 +1,25 @@
 body {
-background-color: black;
+background-color: white;
 }
 
 h1 {
-  color: white;
+  color: black;
               font-family: helvetica;
 
 }
 a {
-  color: white;
+  color: black;
               font-family: helvetica;
 
 }
 h2 {
-  color: white;
+  color: black;
               font-family: helvetica;
 font-size: 80px;
 }
 
 p {
-  color: white;
+  color: black;
               font-family: helvetica;
 
 }
