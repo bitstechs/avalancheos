@@ -42,8 +42,7 @@ input,select{vertical-align:middle}
 
 #appsmenu {
     position: fixed;
-    display: none;
-    width: 100%;
+    width: 0%;
     height: 100%;
     top: 0;
     left: 0;
@@ -51,6 +50,8 @@ input,select{vertical-align:middle}
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
     z-index: 2;
+    overflow-y: hidden;
+    transition: 0.5s;
 }
 
 #appicons {
