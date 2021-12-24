@@ -15,12 +15,58 @@ table{border-collapse:collapse;border-spacing:0}
 hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
 input,select{vertical-align:middle}
 
+
+
+
+.appsBtn, .appsHtxt {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.appsBtn {
+    top: 1px;
+    position: relative;
+}
+
+.desktopIcons, #appsmenu, .windowHeader {
+	-webkit-user-select: none;
+        -webkit-touch-callout: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+}
+
+#time { 
+                position:absolute;           
+                top:5px;
+                color: white;
+                font-family: Helvetica;
+                text-align: center;
+                width: 97%;
+                font-size: 14px;
+  }
+ .right { 
+                right:0;
+ 
+            }
+
+.appsHtxt {
+	color: #FFF;
+	padding: 10px;
+}
+
+.btmButtons {
+	position: absolute;
+	bottom: 10px;
+	left: 20px;
+}
+
 #desktop {
 	font-family: Arial, Helvetica, sans-serif;
     position: fixed;
     height: 100%;
     width: 100%;
-    background: url(../images/bg.jpg);
+	background-color: #FF4040;
+    background-image: url(../images/bg.jpg);
 	overflow: hidden;
     top: 0;
     bottom: 0;
@@ -81,7 +127,8 @@ button {
     padding: 1px 4px;
     background: #CCC;
     font-weight: bold;
-	cursor: pointer;
+    cursor: pointer;
+    height: 24px;
 }
 
 
@@ -118,6 +165,15 @@ color: white;
     border-radius: 7px;
     top: 24px !important;
 }
+
+.window.fullSizeWindow .wincontent {
+	padding: 18px;
+}
+
+body {
+	overflow: hidden;
+}
+
 .fullSizeWindow .ui-resizable-handle {
 	display: none;
 }
@@ -165,7 +221,7 @@ color: white;
     height: 3px;
     width: 5px;
     position: absolute;
-    top: 3px;
+    top: 5px;
     left: 5px;
 }
 .winminimize > span {
@@ -180,20 +236,66 @@ color: white;
 }
 .fullSizeWindow .winmaximize > span:nth-child(1) {
 	margin: 2px 0 0 -4px;
+	top: 4px !important;
+	left: 6px !important;
 }
 .fullSizeWindow .winmaximize > span:nth-child(2) {
     display: inline-block;
-    top: 3px;
-    left: 12px;
+    top: 2px !important;
+    left: 5px !important;
 }
 .wincontent {
-    padding: 18px;
     min-width: 200px;
     min-height: 140px;
     border: 2px solid #000;
     margin: 2px;
 	border-radius: 0 0 5px 5px;
 }
+
+.winclose > .priClose {
+    left: 5px;
+    top: 2px;
+}
+
+.winmaximize > span {
+    top: 4px !important;
+    left: 4.2px !important;
+}
+
+.winminimize > span {
+	left: 0px;
+}
+
+#prismOverlay {
+  -webkit-animation: seconds 0.1s forwards;
+  -webkit-animation-iteration-count: 1;
+  z-index: 999998;
+  -webkit-animation-delay: 15s;
+  animation: seconds 0.1s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 15s;
+  position: absolute;
+  font-family: Helvetica, Arial !important;
+  color: #FFF !important;
+  font-size: 20px !important;
+  top: 0px;
+  left: 0px;
+  background-color: #202020;
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  margin: 0px !important;
+  padding: 10px !important;
+  color: #FFF;
+}
+
+    
+
+
+
 .windowHeader > strong {
     float: left;
     margin: -5px 3px 0 3px;
@@ -248,6 +350,9 @@ color: white;
     display: table;
     cursor: pointer;
     padding: 2px 10px;
+	text-align: center;
+	 word-break: break-all;
+	 margin-top: 10px;
 }
 #icons a:hover {
 	background: #000;
@@ -272,7 +377,7 @@ color: white;
 #window4 {	top: 35px;	left: 240px;}
 #window5 {	top: 35px;	left: 240px;}
 #window6 {	top: 35px;	left: 240px;}
-#window7 {	top: 35px;	left: 240px;}
+#window7 {	top: 35px;	left: 110px;}
 
 #window0 .wincontent {	width: 660px; height: 400px;	}
 #window1 .wincontent {	width: 500px; height: 300px;	}
@@ -281,7 +386,7 @@ color: white;
 #window4 .wincontent {	width: 238px; height: 195px;	}
 #window5 .wincontent {	width: 640px; height: 480px;	}
 #window6 .wincontent {	width: 830px; height: 635px;	}
-#window7 .wincontent {	width: 385px; height: 320px;	}
+#window7 .wincontent {	width: 385px; height: 191px;	}
 
 @media screen and (max-width:960px){
 	#window0 {	left: 10px;	}

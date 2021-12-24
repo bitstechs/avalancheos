@@ -38,13 +38,13 @@ p {
 
 }
     
-   .center {
+   #center {
   position: absolute;
   top: 50%;
-  width: 100%;
+  width: 99%;
   text-align: center;
 }
-#left { 
+  #left { 
                 position:absolute;                  
                 bottom:0;                          
                 left:0;
@@ -67,10 +67,14 @@ p {
                 bottom:0;                          
                 right:0;                          
             }
-#time {
-text-align: left;
-width: 99%;
-}
+    #time {
+    font-family: Helvetica;
+    position: absolute;
+    top: 85%;
+    width: 99%;
+    text-align: center;
+    font-size: 40px;
+  }
 
   </style>
   <img src="system/images/bg.jpg" id="bg" alt="">
@@ -81,7 +85,7 @@ width: 99%;
     
   <h1>
     
-  <div id="right">Welcome to prismOS. <br>Press enter to login.</div>
+  <div id="center">Welcome to prismOS. <br>Press enter to login.</div>
 
 
 
@@ -103,16 +107,30 @@ width: 99%;
 
    
 <script>
-function startTime() {
-    var today = new Date();
-    var h = today.getHours();
-    var m = today.getMinutes();
-    var s = today.getSeconds();
-    m = checkTime(m);
-    s = checkTime(s);
-    document.getElementById('time').innerHTML =
-    h + ":" + m;
-    var t = setTimeout(startTime, 500);
+function startTime(){
+    var date = new Date();
+    var h = date.getHours(); 
+    var m = date.getMinutes(); 
+   // var s = date.getSeconds(); 
+    var session = "AM";
+    
+    if(h == 0){
+        h = 12;
+    }
+    
+    if(h > 12){
+        h = h - 12;
+        session = "PM";
+    }
+    
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    //s = (s < 10) ? "0" + s : s;
+    
+    var time = h + ":" + m + " " + session;
+    document.getElementById("time").innerText = time;
+    document.getElementById("time").textContent = time;
+    setTimeout(startTime, 1000);
 }
 function checkTime(i) {
     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
@@ -122,7 +140,7 @@ function checkTime(i) {
 
 <body onload="startTime()">
 
- <h2><div id="time" class="left"></div></h2>
+ <h2><div id="time"></div></h2>
   
 
 </html>

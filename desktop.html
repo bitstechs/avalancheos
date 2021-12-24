@@ -17,6 +17,7 @@
 
 	<div id="appsmenu" onclick="off()">
 		<div id="appicons">
+		<h1 class="appsHtxt">Apps</h1><center>
 			<a class="openWindow" data-id="0"><img border="0" alt="" src="system/images/icons/paint-32x32.png" width="32" height="32"><br>Paint</a>
 			<a class="openWindow" data-id="1"><img border="0" alt="" src="system/images/icons/notepad-32x32.png" width="32" height="32"><br>Notepad</a>
 			<a class="openWindow" data-id="2"><img border="0" alt="" src="system/images/icons/minesweeper-32x32.png" width="32" height="32"><br>Minesweeper</a>
@@ -25,10 +26,12 @@
 			<a class="openWindow" data-id="5"><img border="0" alt="" src="system/images/icons/bronze-32x32.png" width="32" height="32"><br>Bronze Browser</a>
 			<a class="openWindow" data-id="6"><img border="0" alt="" src="system/images/icons/hyperos-32x32.png" width="32" height="32"><br>HyperOS</a>
 			<a class="openWindow" data-id="7"><img border="0" alt="" src="system/images/icons/about-32x32.png" width="32" height="32"><br>About</a>
+			</div>
+
+		<div class="btmButtons">
 			<a href='lockscreen.html'><img src="system/images/icons/logoff-32x32.png" title="Signs off the user."></a>
             <a href='index.html'><img src="system/images/icons/shutdown-32x32.png" title="Shut the computer down."></a> 
-			
-	     </div>
+		</div>
     </div>
 
 
@@ -62,7 +65,7 @@
 			<iframe width="100%" height="100%" src="apps/hyperos/index.html"></iframe>
         </div>
 
-		<div class="window closed" data-title="About prismOS">
+		<div class="window opened" data-title="About prismOS">
 			<iframe width="100%" height="100%" src="apps/about/index.html"></iframe>
         </div>
 		
@@ -72,36 +75,67 @@
 			<button onclick="on()">Apps</button>           
 		</div>
 		
-		<div id="icons">
-         <a class="openWindow" data-id="0"><img border="0" alt="" src="system/images/icons/paint-32x32.png" width="32" height="32"><br>Paint</a>
-         <a class="openWindow" data-id="1"><img border="0" alt="" src="system/images/icons/notepad-32x32.png" width="32" height="32"><br>Notepad</a>
-         <a class="openWindow" data-id="3"><img border="0" alt="" src="system/images/icons/cal-32x32.png" width="32" height="32"><br>Calendar</a>
-         <a class="openWindow" data-id="4"><img border="0" alt="" src="system/images/icons/calc-32x32.png" width="32" height="32"><br>Calculator</a>
-         <a class="openWindow" data-id="5"><img border="0" alt="" src="system/images/icons/bronze-32x32.png" width="32" height="32"><br>Bronze Browser</a>
-	    </div>
+		<div id="icons" class="desktopIcons">
+			<center>
+			<a class="openWindow" data-id="0"><img border="0" alt="" src="system/images/icons/paint-32x32.png" width="32" height="32"><br>Paint</a>
+			<a class="openWindow" data-id="1"><img border="0" alt="" src="system/images/icons/notepad-32x32.png" width="32" height="32"><br>Notepad</a>
+			<a class="openWindow" data-id="3"><img border="0" alt="" src="system/images/icons/cal-32x32.png" width="32" height="32"><br>Calendar</a>
+			<a class="openWindow" data-id="4"><img border="0" alt="" src="system/images/icons/calc-32x32.png" width="32" height="32"><br>Calculator</a>
+			<a class="openWindow" data-id="5"><img border="0" alt="" src="system/images/icons/bronze-32x32.png" width="32" height="32"><br>Bronze<br>Browser</a>
+		   </center>
+		</div>
 		
 	</div>
 
     <script>
 		function on() {
 		  document.getElementById("appsmenu").style.width = "100%";
-	          document.getElementById("appsmenu").style.height = "100%";
+                  document.getElementById("appsmenu").style.height = "100%";
 
 		}
 		
 		function off() {
 		  document.getElementById("appsmenu").style.width = "0%";
-		  document.getElementById("appsmenu").style.height = "0%";
-
+                  document.getElementById("appsmenu").style.height = "0%";
 
 		}
     </script>
+    <script>
+function startTime(){
+    var date = new Date();
+    var h = date.getHours(); 
+    var m = date.getMinutes(); 
+   // var s = date.getSeconds(); 
+    var session = "AM";
+    
+    if(h == 0){
+        h = 12;
+    }
+    
+    if(h > 12){
+        h = h - 12;
+        session = "PM";
+    }
+    
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    //s = (s < 10) ? "0" + s : s;
+    
+    var time = h + ":" + m + " " + session;
+    document.getElementById("time").innerText = time;
+    document.getElementById("time").textContent = time;
+    setTimeout(startTime, 1000);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+<body onload="startTime()">
 
 
-    <div class="time">				
-      <h1>
-      <iframe width="100" height="32" src="apps/clock/index.html" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
-      </h1>
+   <div class="time">				
+ <a><div id="time" class="right"></div></a>
     </div>
 
 

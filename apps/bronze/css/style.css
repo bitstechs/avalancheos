@@ -23,6 +23,15 @@ embed {
  margin-left: 25px;
 }
 
+#bronzeHome {
+	image-rendering: pixelated;
+}
+
+.gsc-control-cse.gsc-control-cse-en {
+    background: none !important;
+    border: none !important;
+}
+
 #bronzeHome, #bronzeBack, #bronzeForward {
  position: relative;
  float: left;
