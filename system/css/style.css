@@ -52,7 +52,7 @@ input,select{vertical-align:middle}
     z-index: 2;
     overflow-x: hidden;
     overflow-y: hidden;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 #appicons {
