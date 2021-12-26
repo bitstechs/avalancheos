@@ -355,7 +355,7 @@ body {
 	 margin-top: 10px;
 }
 #icons a:hover {
-	background: #000;
+	background: rgba(0, 0, 0, 0.3);
 	color: #FFF;
 }
 #watermark {
