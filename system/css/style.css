@@ -266,31 +266,7 @@ body {
 	left: 0px;
 }
 
-#prismOverlay {
-  -webkit-animation: seconds 0.1s forwards;
-  -webkit-animation-iteration-count: 1;
-  z-index: 999998;
-  -webkit-animation-delay: 15s;
-  animation: seconds 0.1s forwards;
-  animation-iteration-count: 1;
-  animation-delay: 15s;
-  position: absolute;
-  font-family: Helvetica, Arial !important;
-  color: #FFF !important;
-  font-size: 20px !important;
-  top: 0px;
-  left: 0px;
-  background-color: #202020;
-  background-image: url(../images/bg.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  margin: 0px !important;
-  padding: 10px !important;
-  color: #FFF;
-}
+
 
     
 
@@ -386,7 +362,7 @@ body {
 #window4 .wincontent {	width: 238px; height: 195px;	}
 #window5 .wincontent {	width: 640px; height: 480px;	}
 #window6 .wincontent {	width: 830px; height: 635px;	}
-#window7 .wincontent {	width: 385px; height: 191px;	}
+#window7 .wincontent {	width: 440px; height: 210px;	}
 
 @media screen and (max-width:960px){
 	#window0 {	left: 10px;	}
