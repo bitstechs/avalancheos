@@ -15,10 +15,36 @@ table{border-collapse:collapse;border-spacing:0}
 hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
 input,select{vertical-align:middle}
 
+@-moz-document url-prefix() {
+    .scrollbar {
+        overflow: auto;
+        width: 0.4em !important;
+        scroll-behavior: smooth !important;
+        -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.3) !important;
+        background-color: darkgrey !important;
+        outline: 1px solid slategrey !important;
+        border-radius: 10px !important;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0.4em !important;
+    scroll-behavior: smooth !important;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.3) !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: darkgrey !important;
+    outline: 1px solid slategrey !important;
+    border-radius: 10px !important;
+}
 
 
 
-.appsBtn, .appsHtxt {
+#programs, #links {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -37,7 +63,7 @@ input,select{vertical-align:middle}
 
 #time { 
                 position:absolute;           
-                top:5px;
+                bottom:8px;
                 color: white;
                 font-family: Helvetica;
                 text-align: center;
@@ -49,23 +75,16 @@ input,select{vertical-align:middle}
  
             }
 
-.appsHtxt {
-	color: #FFF;
-	padding: 10px;
-}
 
-.btmButtons {
-	position: absolute;
-	bottom: 10px;
-	left: 20px;
-}
+
+
 
 #desktop {
 	font-family: Arial, Helvetica, sans-serif;
     position: fixed;
     height: 100%;
     width: 100%;
-	background-color: #FF4040;
+	background-color: #039f62;
     background-image: url(../images/bg.jpg);
 	overflow: hidden;
     top: 0;
@@ -77,7 +96,7 @@ input,select{vertical-align:middle}
   height: 30px;
   width: 75px;
   position: fixed;
-  top: 0;
+  bottom: 0;
   right: 0;
   background-color: transparent;
   overflow: hidden;
@@ -88,35 +107,105 @@ input,select{vertical-align:middle}
 
 #appsmenu {
     position: fixed;
-    width: 0%;
-    height: 0%;
-    top: 0;
+    width: 405px;
+    height: 370px;
     left: 0;
     right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5);
+    bottom: 28px;
     z-index: 2;
     overflow-x: hidden;
     overflow-y: hidden;
     transition: 1s;
+    background-color:#619bb9c2;
+    border: solid 0.5px #0000008f;
+    border-radius: 10px;
 }
 
-#appicons {
-	position: absolute;
-	z-index: 10;
-	top: 10px;
-	left: 5px;
+
+#programs, #links {
+    float:left; 
+    display:block; 
+    padding:0; 
+    list-style:none;
 }
-#appicons a {
-    display: inline-table;
-    cursor: pointer;
-    padding: 2px 10px;
-    font-family: Arial, Helvetica, sans-serif;
+
+#programs { 
+    background:#fff; 
+    border:solid 1px #365167; 
+    margin:7px 0 7px 7px;
+    box-shadow: 0 0 1px #fff;
+    -moz-box-shadow: 0 0 1px #fff; 
+    -webkit-box-shadow: 0 0 1px #fff;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px; 
+    border-radius: 10px;
+    height: 96%;
+    /*overflow-y: scroll;*/
 }
-#appicons a:hover {
-	background: rgba(0, 0, 0, 0.3);
-	color: #FFF;
+
+#programs a { 
+    border:solid 1px transparent; 
+    display:block; 
+    padding:3px; 
+    margin:3px;
+    color:#4b4b4b; 
+    text-decoration:none; 
+    min-width:220px;}
+
+#programs a:hover {
+    -moz-border-radius:3px; 
+    -webkit-border-radius:3px;
+    box-shadow: inset 0 0 1px #fff; 
+    -moz-box-shadow: inset 0 0 1px #fff; 
+    -webkit-box-shadow: inset 0 0 1px #fff;
+    background: #b8b8b88c;
 }
+
+#programs a img {
+    border:0; 
+    vertical-align:middle; 
+    margin:0 5px 0 0;
+}
+
+#links {
+margin:7px;
+}
+
+#links li.icon {
+    text-align:center;
+}
+
+#links a {
+    border:solid 1px transparent; 
+    display:block; 
+    margin:5px 0; 
+    position:relative;
+    color:#fff; 
+    text-decoration:none; 
+    min-width:120px;
+}
+
+#links a:hover {
+    border:solid 1px #000;
+    -moz-border-radius:3px; 
+    -webkit-border-radius:3px;
+    box-shadow: 0 0 1px #fff; 
+    -moz-box-shadow: inset 0 0 1px #fff; 
+    -webkit-box-shadow: inset 0 0 1px #fff;
+    background: #00000061;
+    
+    }
+
+#links a span { 
+    padding:5px; 
+    display:block; 
+}
+
+
+
+
+
+
 
 button {
     display: inline-block;
@@ -124,11 +213,11 @@ button {
     border-radius: 5px;
     margin: -2px 0 0 10px;
     font-size: 15px;
-    padding: 1px 4px;
+    /*padding: 1px 4px;*/
     background: #CCC;
     font-weight: bold;
     cursor: pointer;
-    height: 24px;
+    height: 30px;
 }
 
 
@@ -159,11 +248,11 @@ color: white;
 	display: none;
 }
 .window.fullSizeWindow {
-    bottom: 0 !important;
+    top: 0 !important;
     right: 0 !important;
     left: 0 !important;
     border-radius: 7px;
-    top: 24px !important;
+    bottom: 24px !important;
 }
 
 .window.fullSizeWindow .wincontent {
@@ -172,6 +261,15 @@ color: white;
 
 body {
 	overflow: hidden;
+}
+.btmButtons {
+	position: absolute;
+	bottom: 2px;
+	right: 55px;
+}
+.btmButtons a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: transparent;
 }
 
 .fullSizeWindow .ui-resizable-handle {
@@ -282,13 +380,14 @@ body {
     display: inline-block;
     border: 2px solid #000;
     border-radius: 5px;
-    line-height: 20px;
+    line-height: 27px;
     margin: -2px 0 0 2px;
     font-size: 15px;
     padding: 0 4px;
     background: #CCC;
     font-weight: bold;
 	cursor: pointer;
+    
 }
 .taskbarPanel.activeTab {
 	background: #FFF;
@@ -304,13 +403,14 @@ body {
 }
 #taskbar {
 	position: absolute;
-	height: 23px;
+	height: 26px;
 	border-top: 2px solid #000;
-	top: 0;
+	bottom: 0;
 	left: 0;
 	right: 0;
 	background: black;
-                  opacity: 0.5;
+    opacity: 0.5;
+    z-index: 99998;    
 }
 .taskbar-time {
 	width: 60px;
@@ -319,7 +419,7 @@ body {
 #icons {
 	position: absolute;
 	z-index: 10;
-	top: 45px;
+	top: 5px;
 	left: 20px;
 }
 #icons a {
@@ -327,8 +427,9 @@ body {
     cursor: pointer;
     padding: 2px 10px;
 	text-align: center;
-	 word-break: break-all;
-	 margin-top: 10px;
+	word-break: break-all;
+    margin-top: 10px;
+    border-radius: 5px;
 }
 #icons a:hover {
 	background: rgba(0, 0, 0, 0.3);
@@ -337,13 +438,27 @@ body {
 #watermark {
     position: absolute;
     display: inline-block;
-    bottom: 10px;
+    bottom: 30px;
     right: 20px;
     font-weight: bold;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
+    z-index: 99998;
+
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Demo styles BEGIN*/
 #window0 {	top: 35px;	left: 240px;}
