@@ -252,7 +252,7 @@ color: white;
     right: 0 !important;
     left: 0 !important;
     border-radius: 7px;
-    bottom: 24px !important;
+    bottom: 26px !important;
 }
 
 .window.fullSizeWindow .wincontent {
@@ -282,7 +282,7 @@ body {
     padding: 2px;
     border-radius: 5px;
     cursor: move;
-    height: 18px;
+    height: 22px;
 }
 .activeWindow .windowHeader {
     background-color: #white;
@@ -293,11 +293,11 @@ body {
     border: 2px solid #000;
     margin-left: 1px;
     font-size: 10px;
-    padding: 3px 8px;
+    padding: 4px 8px;
     font-family: "Arial Black", Gadget, sans-serif;
-    border-radius: 100px;
+    border-radius: 50px;
     line-height: 10px;
-    width: 1px;
+    width: 5px;
     height: 10px;
     position: relative;
     overflow: hidden;
@@ -317,7 +317,7 @@ body {
 .windowHeader > span > span {
     display: inline-block;
     height: 3px;
-    width: 5px;
+    width: 6px;
     position: absolute;
     top: 5px;
     left: 5px;
@@ -335,12 +335,12 @@ body {
 .fullSizeWindow .winmaximize > span:nth-child(1) {
 	margin: 2px 0 0 -4px;
 	top: 4px !important;
-	left: 6px !important;
+	left: 8px !important;
 }
 .fullSizeWindow .winmaximize > span:nth-child(2) {
     display: inline-block;
     top: 2px !important;
-    left: 5px !important;
+    left: 7px !important;
 }
 .wincontent {
     min-width: 200px;
@@ -356,8 +356,8 @@ body {
 }
 
 .winmaximize > span {
-    top: 4px !important;
-    left: 4.2px !important;
+    top: 5px !important;
+    left: 6.2px !important;
 }
 
 .winminimize > span {
@@ -372,8 +372,8 @@ body {
 
 .windowHeader > strong {
     float: left;
-    margin: -5px 3px 0 3px;
-    line-height: 29px;
+    margin: -4px 0 0 3px;
+    line-height: 30px;
     font-size: 15px;
 }
 .taskbarPanel {
