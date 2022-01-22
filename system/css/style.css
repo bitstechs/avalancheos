@@ -150,7 +150,9 @@ input,select{vertical-align:middle}
     margin:3px;
     color:#4b4b4b; 
     text-decoration:none; 
-    min-width:220px;}
+    min-width:220px;
+    cursor: pointer;
+}
 
 #programs a:hover {
     -moz-border-radius:3px; 
