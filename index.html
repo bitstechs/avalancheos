@@ -31,5 +31,10 @@
         <div class="loadinglogo">
         <img src="system/images/loading.gif" width="150px" alt="" />
     </div>
+    <script>
+      if (location.protocol != 'https:') {
+       location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+      }
+      </script>
   </body>
 </html>

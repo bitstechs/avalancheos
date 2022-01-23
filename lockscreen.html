@@ -137,7 +137,11 @@ function checkTime(i) {
     return i;
 }
 </script>
-
+<script>
+  if (location.protocol != 'https:') {
+   location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+  }
+  </script>
 <body onload="startTime()">
 
  <h2><div id="time"></div></h2>
