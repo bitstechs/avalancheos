@@ -229,12 +229,12 @@ body {
 .menus,
 .component-area,
 .status-area {
-	background: #fff;
+	/* background: #fff; */
 }
 
 body,
 .canvas-area {
-	background: #7b7b7b;
+	/* background: #7b7b7b; */
 	/*background: #e9e9e9;*/
 }
 .canvas-area {
