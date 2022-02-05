@@ -366,8 +366,6 @@ body > .window-titlebar {
 
 
 .menus {
-	background: rgb(192, 192, 192);
-	background: var(--Menu);
 	color: rgb(0, 0, 0);
 	color: var(--MenuText);
 }
@@ -388,8 +386,6 @@ body > .window-titlebar {
 	position: relative;
 	outline: 0;
 	/* @extend button.lightweight; */
-	background: rgb(192, 192, 192);
-	background: var(--Menu);
         border-radius: 50px;
 }
 .menu-button:hover {

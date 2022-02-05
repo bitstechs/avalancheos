@@ -84,7 +84,7 @@ input,select{vertical-align:middle}
     position: fixed;
     height: 100%;
     width: 100%;
-	background-color: #039f62;
+	background-color: #87bef7;
     background-image: url(../images/bg.jpg);
 	overflow: hidden;
     top: 0;
@@ -116,7 +116,7 @@ input,select{vertical-align:middle}
     overflow-x: hidden;
     overflow-y: hidden;
     transition: 1s;
-    background-color:#619bb9c2;
+    background-color: #2c2c2cba;
     border: solid 0.5px #0000008f;
     border-radius: 10px;
 }
@@ -239,9 +239,9 @@ color: white;
 .window {
     position: absolute;
     border: 2px solid #000;
-    background: #EEE;
-	border-radius: 7px;
-	z-index: 1000;
+    background: #eeeeeec7;
+    border-radius: 7px;
+    z-index: 1000;
 }
 .window.closed {
 	display: none;
@@ -258,7 +258,7 @@ color: white;
 }
 
 .window.fullSizeWindow .wincontent {
-	padding: 18px;
+	padding: 14px;
 }
 
 body {
@@ -278,16 +278,13 @@ body {
 	display: none;
 }
 .windowHeader {
-    background-color: grey;
+    background-color: #00000087;
     text-align: right;
     border-bottom: 2px solid #000;
     padding: 2px;
     border-radius: 5px;
     cursor: move;
-    height: 22px;
-}
-.activeWindow .windowHeader {
-    background-color: #white;
+    height: 25px;
 }
 .windowHeader > span {
     display: inline-block;
@@ -300,7 +297,7 @@ body {
     border-radius: 50px;
     line-height: 10px;
     width: 5px;
-    height: 10px;
+    height: 14px;
     position: relative;
     overflow: hidden;
 }
@@ -318,8 +315,8 @@ body {
 }
 .windowHeader > span > span {
     display: inline-block;
-    height: 3px;
-    width: 6px;
+    height: 6px;
+    width: 8px;
     position: absolute;
     top: 5px;
     left: 5px;
@@ -336,13 +333,13 @@ body {
 }
 .fullSizeWindow .winmaximize > span:nth-child(1) {
 	margin: 2px 0 0 -4px;
-	top: 4px !important;
-	left: 8px !important;
+	top: 5px !important;
+	left: 6px !important;
 }
 .fullSizeWindow .winmaximize > span:nth-child(2) {
     display: inline-block;
     top: 2px !important;
-    left: 7px !important;
+    left: 6px !important;
 }
 .wincontent {
     min-width: 200px;
@@ -352,6 +349,10 @@ body {
 	border-radius: 0 0 5px 5px;
 }
 
+.winclose span {
+left: 10px;
+}
+
 .winclose > .priClose {
     left: 5px;
     top: 2px;
@@ -359,7 +360,7 @@ body {
 
 .winmaximize > span {
     top: 5px !important;
-    left: 6.2px !important;
+    left: 5.2px !important;
 }
 
 .winminimize > span {
@@ -375,7 +376,7 @@ body {
 .windowHeader > strong {
     float: left;
     margin: -4px 0 0 3px;
-    line-height: 30px;
+    line-height: 34px;
     font-size: 15px;
 }
 .taskbarPanel {
@@ -410,9 +411,9 @@ body {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: black;
-    opacity: 0.5;
-    z-index: 99998;    
+	background: #181818;
+	opacity: 0.7;
+	z-index: 99998;
 }
 .taskbar-time {
 	width: 60px;
@@ -472,14 +473,16 @@ body {
 #window6 {	top: 35px;	left: 240px;}
 #window7 {	top: 35px;	left: 110px;}
 
+
 #window0 .wincontent {	width: 660px; height: 400px;	}
 #window1 .wincontent {	width: 500px; height: 300px;	}
-#window2 .wincontent {	width: 282px; height: 351px;	}
+#window2 .wincontent {	width: 282px; height: 350px;	}
 #window3 .wincontent {	width: 450px; height: 450px;	}
-#window4 .wincontent {	width: 238px; height: 195px;	}
+#window4 .wincontent {	width: 255px; height: 285px;	}
 #window5 .wincontent {	width: 640px; height: 480px;	}
 #window6 .wincontent {	width: 830px; height: 635px;	}
-#window7 .wincontent {	width: 440px; height: 210px;	}
+#window7 .wincontent {	width: 295px; height: 215px;	}
+
 
 @media screen and (max-width:960px){
 	#window0 {	left: 10px;	}

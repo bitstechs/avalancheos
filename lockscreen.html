@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
-     <title>prismOS | Lock</title>      
+     <title>AvalancheOS | Lock</title>      
      	
    </head>
 
@@ -14,11 +14,15 @@
    position: fixed;
    top: 0;
    left: 0;
-
+   filter: blur(4px);
+  -webkit-filter: blur(4px);
    /* Preserve aspet ratio */
    min - width: 100 % ;
    min - height: 100 % ;
+
+  
 }
+
 
 
 h1 {
@@ -67,10 +71,19 @@ p {
                 bottom:0;                          
                 right:0;                          
             }
+.btmButtons {
+	 position: absolute;
+	 bottom: 2px;
+	 right: 10px;
+}
+.btmButtons a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: transparent;
+}
     #time {
     font-family: Helvetica;
     position: absolute;
-    top: 65%;
+    top: 60%;
     width: 99%;
     text-align: center;
     font-size: 40px;
@@ -85,11 +98,14 @@ p {
     
   <h1>
     
-  <div id="center">Welcome to prismOS. <br>Press enter to login.</div>
+  <div id="center">Welcome to AvalancheOS. <br>Press enter to login.</div>
 
 
 
   </h1>
+  <div class="btmButtons">
+    <a href='index.html'><img src="system/images/icons/shutdown-32x32.png" style="height: 42px"; title="Shut's down the PC."></a>
+  </div>
  
 
   
