@@ -121,6 +121,7 @@ desktop {
     font-size: 1.5em;
     line-height: 10px;
     margin: 15px 5px;
+    color: black;
 
 }
 
@@ -162,6 +163,10 @@ desktop {
     content: "Default";
 }
     
+.currentversion::before {
+    content: "22600.16";
+}
+
 #timecontainer {
   height: 42px;
   width: 74px;
@@ -308,6 +313,10 @@ desktop {
 
 a {
 color: white;
+}
+
+h1 {
+    color: white;
 }
 
 #window6 > .wincontent iframe {
