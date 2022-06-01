@@ -346,12 +346,12 @@ color: white;
 body {
 	overflow: hidden;
 }
-.powerOptions {
+.bottomBtns {
 	position: absolute;
 	bottom: 2px;
 	right: 15px;
 }
-.powerOptions a {
+.bottomBtns a {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: transparent;
 }
@@ -532,7 +532,7 @@ left: 10px;
 }
 #watermark {
     position: absolute;
-    display: inline-block;
+    display: none;
     bottom: 60px;
     right: 20px;
     font-weight: bold;

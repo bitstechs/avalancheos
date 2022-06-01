@@ -8,10 +8,10 @@
 	<script src="system/js/jquery.js"></script>
 	<script src="system/js/jquery-ui.js"></script>
 	<script src="system/js/script.js"></script>	
-	<link rel="stylesheet" type="text/css" href="system/css/style.css"/>
-	<link rel="alternate stylesheet 1" type="text/css" title="theme1" href="system/css/themes/theme1.css">
-	<link rel="alternate stylesheet 2" type="text/css" title="theme2" href="system/css/themes/theme2.css">
-	<link rel="alternate stylesheet 3" type="text/css" title="lighttheme" href="system/css/themes/lighttheme.css">
+	<link rel="stylesheet" type="text/css" href="system/css/default.css"/>
+	<link rel="alternate stylesheet 1" type="text/css" title="theme1" href="system/css/themes/classic.css">
+	<link rel="alternate stylesheet 2" type="text/css" title="theme2" href="system/css/themes/metro.css">
+	<link rel="alternate stylesheet 3" type="text/css" title="lighttheme" href="system/css/themes/defaultlight.css">
 
 
 
@@ -43,7 +43,8 @@
 
     
 
-  <div class="powerOptions">
+  <div class="bottomBtns">
+	<a href='https://discord.gg/HpHWuanm4C'><img src="system/images/icons/discord.png" height="32" width="32" title="Join the Discord!"></a>
     <a href='lockscreen.html'><img src="system/images/icons/logoff-32x32.png" title="Logs off the User"></a>
     <a href='index.html'><img src="system/images/icons/shutdown-32x32.png" title="Shut's down the PC."></a>
   </div>
@@ -107,6 +108,10 @@
 				<input id="inputbtn" type="file" accept="image/*" onchange="changeBG(event)" style="margin: 2px 0px;"><br>
 				<button id="settingsbutton" onclick="resetBG(event)">Reset to default</button><br>
 				<br>
+				<hr id="settingshr">
+				<h1 id="settingsh1">Other</h1>
+				<input type="checkbox" id="waterCheck" onclick="enableWatermark()">Enable the watermark</input>
+				<br>
 			</div>
 			  
 			<div id="About" class="tab" style="display:none;text-align: center;">
@@ -117,7 +122,7 @@
 			    </div>
 
                 <hr id="settingshr">
-                <p>Version 22600.1</p>
+                <p>Version 22600.15</p>
                 <hr id="settingshr">
 				<a id="darktext">Bits Tech - 2022</a>
 				<br>
@@ -154,7 +159,10 @@
 	</desktop>   
 
 	
- <!--<a id="watermark">AvalancheOS</a>
+ <a id="watermark">AvalancheOS
+ <br>
+Build 22600.15
+</a>
 </body>
 
 </html>

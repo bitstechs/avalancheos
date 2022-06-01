@@ -12,7 +12,7 @@ id;
 
 var style_cookie_name = "theme" ;
 var style_cookie_duration = 30 ;
-var style_domain = "avalancheos.glitch.me" ;
+var style_domain = "bitstechs.github.io" ;
 
 // *** END OF CUSTOMISABLE SECTION ***
 // You do not need to customise anything below this line
@@ -109,7 +109,20 @@ $(document).ready(function(){
 
   }
   
-
+  function enableWatermark() {
+	// Get the checkbox
+	var checkBox = document.getElementById("waterCheck");
+	// Get the output text
+	var text = document.getElementById("watermark");
+  
+	// If the checkbox is checked, display the output text
+	if (checkBox.checked == true){
+	  text.style.display = "inline-block";
+	} else {
+	  text.style.display = "none";
+	}
+  }
+  
 
 function startTime(){
     var date = new Date();
