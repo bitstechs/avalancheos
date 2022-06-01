@@ -2,25 +2,17 @@
 <html>
    <head>
      <title>AvalancheOS | Lock</title>      
-     	
+     <script src="system/js/script.js"></script>	
+     <meta name="viewport" content="width=device-width, initial-scale=1">
    </head>
 
 
    <style>
-  
 
-  
-#bg {
-   position: fixed;
-   top: 0;
-   left: 0;
-   filter: blur(4px);
-  -webkit-filter: blur(4px);
-   /* Preserve aspet ratio */
-   min - width: 100 % ;
-   min - height: 100 % ;
 
-  
+body {
+    background-image: url(system/images/bgdark.jpg);
+    background-size: cover;
 }
 
 
@@ -90,7 +82,6 @@ p {
   }
 
   </style>
-  <img src="system/images/bg.jpg" id="bg" alt="">
 
 <h1>
 
@@ -118,6 +109,10 @@ p {
         window.location.replace("desktop.html");
     }
      });
+
+     window.addEventListener('touchstart', function() {
+      window.location.replace("desktop.html");
+    });
     </script>
 
 

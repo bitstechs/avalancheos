@@ -1,1 +1,1 @@
-AvalancheOS's source code
+AvalancheOS

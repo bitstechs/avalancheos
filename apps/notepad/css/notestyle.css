@@ -28,7 +28,7 @@
 	--GradientActiveTitle: rgb(16, 132, 208);
 	--GradientInactiveTitle: rgb(181, 181, 181);
 	--GrayText: rgb(128, 128, 128);
-	--HilightText: rgb(255, 255, 255);
+	--HilightText: grey;
 	--HotTrackingColor: rgb(0, 0, 255);
 	--InactiveBorder: rgb(192, 192, 192);
 	--InactiveTitle: rgb(128, 128, 128);

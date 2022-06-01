@@ -1,0 +1,208 @@
+#timecontainer {
+    height: 42px;
+    width: 75px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: transparent;
+    overflow: hidden;
+  
+   
+  }
+  
+  
+  .appsHtxt {
+      text-align: unset !important;
+      margin: 15px 10px;
+      font-size: 28px;
+  }
+  .appsHtxt::before {
+      content: "Start";
+  }
+  
+  
+  #appsmenu {
+      position: fixed;
+     margin: unset !important;
+     height: 100%;
+      width: 0%;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      transition: 0.5s;
+      background-color: #2c2c2cad;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 0px;
+      -webkit-box-shadow: 0px 0px 15px 0px #000000; 
+      box-shadow: 0px 0px 15px 0px #000000;
+  }
+  
+  #appsmenu.opened {
+      width: 100% !important;
+      height: 100% !important;
+  }
+  
+  .currenttheme::before {
+    content: "Metro";
+  }
+  
+  #appicons {
+      left: 5px;
+  }
+  #appicons a {
+      margin: 1px 0;
+      display: inline-table;
+      cursor: pointer;
+      padding: 10px 15px;
+      font-family: Arial, Helvetica, sans-serif; 
+      text-decoration: none;
+      background: #00000040;
+      
+  }
+  #appicons a:hover {
+      
+      background: #00000024;
+      color: #FFF;
+  
+  }
+  
+  #icons {
+      display: none;
+  }
+  
+  
+  .powerOptions {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+  
+  
+  
+  
+  .window {
+      display: block;
+      border: 2px solid transparent;
+      border-radius: 0px;
+      position: fixed;
+      left: 0px !important;
+      top: 0px !important;
+      height: 100% !important;
+      width: 100% !important;
+      background: #eeeeee;
+      backdrop-filter: blur(0px);
+      -webkit-backdrop-filter: blur(0px);
+      z-index: 99999999;
+  }
+  
+  .wincontent {
+      top: 2px !important;
+      left: 2px !important;
+      width: 99% !important;
+      height: 95% !important;
+        overflow: hidden !important;
+    }
+  
+  #taskbar {
+      z-index: 1;
+  }
+  
+  .fullSizeWindow .ui-resizable-handle {
+      display: none;
+  }
+  .windowHeader {
+      text-align: right;
+      border-bottom: 2px solid transparent;
+      padding: 2px;
+      border-radius: 5px;
+      cursor: move;
+      height: 25px;
+  }
+  
+  
+  .winmaximize {
+      display: none !important;
+  }
+  
+  .windowHeader strong {
+      font-weight: normal;
+  }
+  .task {
+      border: 2px solid transparent;
+      border-radius: 5px;
+      line-height: 12px;
+      font-size: 15px;
+      margin: 0 10px;
+      background: transparent;
+      font-weight: bold;
+      cursor: pointer;
+      transform: scale(1.25);
+      transition: 0.5s;
+      padding: 0 1px;
+  }
+  
+  .windowHeader > span {
+      display: inline-block;
+      cursor: pointer;
+      border: 2px solid transparent;
+      font-size: 20px;
+      padding: 4px 8px;
+      font-family: "Arial Black", Gadget, sans-serif;
+      border-radius: 50px;
+      line-height: 10px;
+      width: 14px;
+      height: 14px;
+      position: relative;
+      overflow: hidden;
+  }
+  
+  .task.activeTab {
+      transform: scale(1.45);
+      background-color: #2e2e2e;
+  }
+  
+  .task:hover {
+      background: rgba(0, 0, 0, 0.3);
+      color: #FFF;
+  }
+  .task.minimizedTab {
+      transform: scale(1.35);
+      transition: 0.5s;
+  }
+  .task.minimizedTab:hover {
+      transform: scale(1.35);
+  }
+  .task.closed {
+      display: none;
+      transition: 0.5s;
+      
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  #window0 .wincontent {	width: 100%; height: 100%;	}
+  #window1 .wincontent {	width: 100%; height: 100%;	}
+  #window2 .wincontent {	width: 100%; height: 100%;	}
+  #window3 .wincontent {	width: 100%; height: 100%;	}
+  #window4 .wincontent {	width: 100%; height: 100%;	}
+  #window5 .wincontent {	width: 100%; height: 100%;	}
+  #window6 .wincontent {	width: 100%; height: 100%;	}
+  #window7 .wincontent {	width: 100%; height: 100%;	}
+  
+  

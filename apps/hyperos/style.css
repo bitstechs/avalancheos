@@ -1,4 +1,8 @@
-
+body {
+  background-color: transparent;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 
 h1 {
   color: black;
@@ -7,8 +11,8 @@ h1 {
 }
 a {
   color: black;
-              font-family: helvetica;
-
+  font-family: helvetica;
+  text-align: center;
 }
 h2 {
   color: black;
@@ -21,33 +25,23 @@ p {
               font-family: helvetica;
 
 }
-    
-   .center {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  text-align: center;
+
+#vmflex {
+  display: flex;
 }
-#left { 
-                position:absolute;                  
-                bottom:0;                          
-                left:0;
- 
-            }
-     .left { 
-                position:absolute;                  
-                bottom:0;                          
-                left:0;
- 
-            }
-     #top { 
-                position:absolute;                  
-                bottom:0;                          
-                top:0;
- 
-            }
-    #right { 
-                position:absolute;                  
-                bottom:0;                          
-                right:0;                          
-            }
+#vmflex a {
+  margin: 0px 5px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+#vmflex a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+#vmflex img {
+  margin: 2px 5px; 
+}
+
+
