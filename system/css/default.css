@@ -70,6 +70,14 @@ input,select{vertical-align:middle}
     content: "Apps";
 }
 
+.currenttheme::before {
+    content: "Default";
+}
+    
+.currentversion::before {
+    content: "22600.21";
+}
+
 .appsBtn {
     top: 1px;
     position: relative;
@@ -87,7 +95,7 @@ input,select{vertical-align:middle}
                 position:absolute;           
                 top:11px;
                 color: white;
-                font-family: Helvetica;
+                font-family: 'Helvetica', 'Arial', sans-serif;
                 text-align: center;
                 width: 97%;
                 font-size: 15px;
@@ -98,7 +106,7 @@ input,select{vertical-align:middle}
  }
 
 desktop {
-	font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Helvetica', 'Arial', sans-serif;
     position: fixed;
     height: 100%;
     width: 100%;
@@ -159,13 +167,7 @@ desktop {
     position: absolute;
 }
 
-.currenttheme::before {
-    content: "Default";
-}
-    
-.currentversion::before {
-    content: "22600.16";
-}
+
 
 #timecontainer {
   height: 42px;
